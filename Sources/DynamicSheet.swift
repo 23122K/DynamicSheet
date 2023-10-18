@@ -49,7 +49,7 @@ struct DynamicSheet<SheetContent: View>: ViewModifier {
                     .cornerRadius(options.cornerRadius)
                     .onAppear { contentSize = geometry.size}
                     .padding(.bottom, 50)
-                    .background(options.backgorundColor.frame(width: UIScreen.main.bounds.width, alignment: .bottom))
+                    .background(options.backgorundColor.frame(width: UIScreen.main.bounds.width, alignment: .bottom).cornerRadius(options.cornerRadius))
                     .offset(y: isPresented ? 0 : offset.height)
                     .frame(width: offset.width, height: offset.height, alignment: .bottom)
                     .transition(.move(edge: .bottom))
