@@ -81,7 +81,7 @@ struct DynamicSheet<SheetContent: View>: ViewModifier {
 }
 
 public extension Color {
-    static let system: Color = Color(UIColor.systemGroupedBackground)
+    static let system: Color = Color(UIColor.secondarySystemGroupedBackground)
 }
 
 public extension View {
